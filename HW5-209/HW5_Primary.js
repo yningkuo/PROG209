@@ -60,15 +60,15 @@ document.getElementById("dealbtn").addEventListener("click", function()
     {
             if(playerScore > computerScore)
             {
-                document.getElementById("finalMsg").innerHTML = 'Congrats, you win!';
+                document.getElementById("finalMsg").innerHTML = 'GAME OVER. Congrats, you win this game!';
             }
             else if(playerScore < computerScore)
             {
-                document.getElementById("finalMsg").innerHTML = 'Oh no, you lose!';
+                document.getElementById("finalMsg").innerHTML = 'GAME OVER, you lose!';
             }
             else if(playerScore = computerScore)
             {
-                document.getElementById("finalMsg").innerHTML = 'Tie!';
+                document.getElementById("finalMsg").innerHTML = 'GAME OVER, tie!';
             }
     }
         if(i > 26){
@@ -80,19 +80,21 @@ document.getElementById("dealbtn").addEventListener("click", function()
     function setScore(playerArraySuit, playerArrayRank,computerArraySuit, computerArrayRank)
     {               
         if(playerArrayRank > computerArrayRank )
-        {
+        {                   document.getElementById("finalMsg").innerHTML = 'You won this hand';
                             playerScore++;
             }
                 else if(playerArrayRank < computerArrayRank)
-                {
+                {           document.getElementById("finalMsg").innerHTML = 'You lost this hand';
                             computerScore++;
                     }
                 else if(playerArrayRank = computerArrayRank)
                 {
                             if(playerArraySuit > computerArraySuit){
+                                    document.getElementById("finalMsg").innerHTML = 'You won this hand';
                                     playerScore++;
                                 }
                                 else if(playerArraySuit > computerArraySuit){
+                                    document.getElementById("finalMsg").innerHTML = 'You lost this hand';
                                       computerScore++;
                                 }
                 }
