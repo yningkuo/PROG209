@@ -1,0 +1,20 @@
+#result{
+    background-color: ivory;
+    display:block;
+    width:400px;
+    height:400px;
+    border: 2px navy solid;
+    padding:2%;
+}
+#finalResult{
+    background-color: pink;
+    display:block;
+    height: 60px;
+    width:160px;
+    margin-left:1%;
+    margin-bottom: 5px;
+}
+button  {
+    margin-left:2%;
+    margin-top:1px;
+}

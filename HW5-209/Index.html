@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="HW5.css">
+    <title>Card Game</title>
+</head>
+<body>
+    <h1>Card Game</h1>
+    <span id="result">
+       <h3>Player</h3>
+        <p>
+            Suit: <span id="playerScoreSuit"></span>
+            Rank: <span id="playerScoreRank"></span>
+        </p>
+        
+       <h3>Computer</h3>
+       <p>
+           Suit: <span id="computerScoreSuit"></span>
+           Rank: <span id="computerScoreRank"></span>
+       </p>
+       <h4>Scores:</h4>
+       <p>
+           Player: &nbsp;<span id="playerTotalScore"></span> v.s. &nbsp; Computer: &nbsp; <span id="computerTotalScore"></span>
+           <br> 
+           Total Counts: <span id="totalCount"></span>
+            <br>
+       
+        </p>   
+
+    </div>
+    <div id="finalResult">
+            <p>
+                <span id="finalMsg"></span>
+            </p>
+    </div>
+    <button id="dealbtn">DEAL</button>
+    <button id="nextbtn">NEXT</button>
+
+
+    <script src="lib_card.js"></script>
+    <script src="lib_deck.js"></script>
+    <script src="HW5_Primary.js"></script>
+</body>
+</html>
