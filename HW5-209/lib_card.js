@@ -12,7 +12,7 @@ function Card(suit, rank) {
 }
 //------- player part Start--------------
 function checkRank(rank){
-    var playerRankText = document.getElementById("playerScoreRank");
+    let playerRankText = document.getElementById("playerScoreRank");
     
     if(rank === 14){
         playerRankText.innerHTML = "ACE";
@@ -32,7 +32,7 @@ function checkRank(rank){
 
 function cardColorPlayer(suit,rank)
 {
-    var playerSuitText = document.getElementById("playerScoreSuit");
+    let playerSuitText = document.getElementById("playerScoreSuit");
     
     if(suit === 4){
         playerScoreSuit.style.color = "black";
@@ -66,7 +66,7 @@ function cardColorPlayer(suit,rank)
 //------- player part END--------------
 //------- Computer part Start--------------
 function checkRankCom(rank){
-    var comRankText = document.getElementById("computerScoreRank");
+    let comRankText = document.getElementById("computerScoreRank");
     
     if(rank === 14){
         comRankText.innerHTML = "ACE";
@@ -86,7 +86,7 @@ function checkRankCom(rank){
 
 function cardColorCom(suit,rank)
 {
-    var comSuitText = document.getElementById("computerScoreSuit");
+    let comSuitText = document.getElementById("computerScoreSuit");
     
     if(suit === 4){
         computerScoreSuit.style.color = "black";

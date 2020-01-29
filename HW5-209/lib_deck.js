@@ -9,12 +9,12 @@ function shuffle(a) {
     return a;
 }
 
-var deck =
+let deck =
 {
     cardArray: [],
     load: function(){
-        var deckSuit = 1;
-        var deckRank = 2;
+        let deckSuit = 1;
+        let deckRank = 2;
         
         for(deckSuit = 1; deckSuit < 5; deckSuit++)
         {

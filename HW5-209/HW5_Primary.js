@@ -1,11 +1,11 @@
-var playerArray =[26];
-var computerArray =[26];
+let playerArray =[26];
+let computerArray =[26];
 
-var i = 0;
-var playerCount =0;
-var computerCount =0;
-var playerScore = 0;
-var computerScore = 0;
+let i = 0;
+let playerCount =0;
+let computerCount =0;
+let playerScore = 0;
+let computerScore = 0;
 document.getElementById("dealbtn").addEventListener("click", function()
 {
     deck.load();
