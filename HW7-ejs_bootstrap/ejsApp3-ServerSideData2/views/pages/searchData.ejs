@@ -1,0 +1,94 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+    <style>
+
+
+        .jumbotron, .well {
+            background-color: #dfe3ee !important;
+            height: 80%;
+        }
+    </style>
+    <main>
+        <div class="jumbotron">
+            <h2>Unfriend </h2>
+            <p>Enter the friend's name and phone number to unfriend.
+           
+            </p>
+
+
+
+            <%if (dataArray != null) { %>
+
+            <ul class="list-group">
+                <% for(var i=0; i
+                < dataArray.length; i++) {%>
+                <li class="list-group-item"><%= "Title:  " + dataArray[i].id + "   Date: " + dataArray[i].date %></li>
+                <% } %>
+            </ul>
+
+
+            <% } %>
+
+
+
+            <p id="demo"></p>
+
+
+            <br>
+
+            <br />
+            <label for="movie">Friend Name:</label>
+            <input class="form-control" type="text" id="movie" name="movie">
+            <br>
+            <!--<label for="date">Search Year Released</label>-->
+            <label for="date">Phone Number:</label>
+            <input class="form-control" type="text" id="date" name="date">
+            <br>
+            <button class="btn btn-primary  " onclick="searchURL();">Delete </button>
+
+        </div>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+    <script type="text/javascript">// our menu calls this page URL with no ?id= value,
+        // so code needs to check for that
+        // when user enters data, I append the data using the required ?id=
+
+        function searchURL() {
+            var myURL = (document.location).toString();
+            var n = myURL.indexOf("?");
+            myURL = myURL.substr(0, n);
+            document.location = myURL + "?id=" + document.getElementById("movie").value + "&date=" + document.getElementById("date").value;
+
+
+            //var x = document.getElementById("date").value;
+            //document.getElementById("demo").innerHTML = x;
+
+            //var m = dataArray.indexOf(x);
+            //alert(dataArray[m]);
+
+
+            // http://localhost:3000/uploadData?id=Terminator&date=1946
+            //var myURL = (document.location).toString();
+            //var m = myURL.indexOf(input);
+            //myURL = myURL.substr(0, m);
+            //document.location = myURL + "?id=" + document.getElementById("movie").value + "&date=" +  document.getElementById("date").value;
+            // document.location = "http://localhost:3000/about"
+
+        }</script>
+
+</body>
+    </html>

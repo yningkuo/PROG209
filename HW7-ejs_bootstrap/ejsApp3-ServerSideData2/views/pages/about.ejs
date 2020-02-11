@@ -1,0 +1,106 @@
+<!-- views/pages/about.ejs -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+    <style>
+
+        .jumbotron , .well {
+            background-color: #dfe3ee !important;
+            
+        }
+        .well {
+            height:660px;
+        }
+      
+    </style>
+    <main>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="jumbotron">
+                    <h1>My Post</h1>
+                    <div>
+                        <h3><a href="#" title="">What a sunny day!</a></h3>
+                        <p class="post-meta">
+
+                            <time class="date" datetime="2020-02-10T11:24">Feb 10, 2020</time>
+                            /
+                            <span class="categories">
+                                <a href="#">Weather</a> /
+                                <a href="#">Beer</a> /
+                                <a href="#">Happy</a>
+                            </span>
+                            <p class="postText">
+                                Anyone wants to have a beer?
+                            </p>
+
+                        </p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h3><a href="#" title="">Deadline is approaching...</a></h3>
+                        <p class="post-meta">
+
+                            <time class="date" datetime="2020-02-09T11:24">Feb 09, 2020</time>
+                            /
+                            <span class="categories">
+                                <a href="#">Design</a> /
+                                <a href="#">Prog209</a> /
+                                <a href="#">Web Design</a>
+                            </span>
+                        <p class="postText">
+                            Remember to submit your homework :) 
+                        </p>
+                        </p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h3><a href="#" title="">This is my first post on Fakebook!</a></h3>
+                        <p class="post-meta">
+
+                            <time class="date" datetime="2020-02-08T11:24">Feb 08, 2020</time>
+                            /
+                            <span class="categories">
+                                <a href="#">Facebook</a> /
+                                <a href="#">First Post</a> /
+                                <a href="#">Hurray</a>
+                            </span>
+                        <p class="postText">
+                            So much fun!
+                        </p>
+
+                        </p>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="well">
+                    <h3>About me</h3>
+                    <p>
+                        Study at Bellevue College
+                        <br/>
+                        Lives in Bellevue, Washington
+                        <br/>
+                        Followed by 9,999,999 people
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+    </html>

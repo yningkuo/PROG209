@@ -1,0 +1,68 @@
+<!-- views/pages/index.ejs -->
+
+<style>
+    .jumbotron {
+        background-color: #dfe3ee !important;
+        height:80%;
+        
+    }
+    .btn{
+        margin-left:30%;
+        display:block;
+    }
+    .signupblock {
+        float:right;
+        margin: 0px auto;
+        border: solid 1px white;
+        padding: 3%;
+        display: block;
+    }
+    
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+<main>
+    <div class="jumbotron">
+        <h1>Welcome to Facebook</h1>
+
+        <p>Connect with friends and the world around you on Fakebook.</p>
+        
+        <div class="signupblock">
+            <br>
+
+            <br />
+            <label for="name">Name:&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  </label>
+            <input class="signup" type="text">
+            <br />
+            <label for="lName">Last Name:</label>
+            <input class="signup" type="text">
+            <br>
+            <label for="email">Phone:&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</label>
+            <input class="signup" type="text">
+            <br />
+            <label for="pw">password:&nbsp;&nbsp;</label>
+            <input class="signup" type="text">
+            <br>
+            <br />
+            <br />
+            <button class="btn btn-primary" onclick="location.href='/error'">Sign Up </button>
+        </div>
+    </div>
+    
+</main>
+
+<footer>
+  <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
